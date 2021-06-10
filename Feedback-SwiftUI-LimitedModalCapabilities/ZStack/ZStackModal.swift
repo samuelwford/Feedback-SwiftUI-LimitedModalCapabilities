@@ -45,6 +45,7 @@ struct ZStackModal: View {
             Button("Say Hello with a ZStack Modal") {
                 isPresented = true
             }
+            .buttonStyle(BasicButtonStyle(color: .blue))
         }
         .padding()
         .zstackModal(isPresented: $isPresented) {

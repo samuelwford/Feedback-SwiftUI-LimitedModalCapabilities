@@ -19,6 +19,7 @@
 		32B6B9432672521F00F7B898 /* ZStackModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B9422672521F00F7B898 /* ZStackModal.swift */; };
 		32B6B946267253B400F7B898 /* SheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B945267253B400F7B898 /* SheetExample.swift */; };
 		32B6B949267256E100F7B898 /* FullScreenCoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B948267256E100F7B898 /* FullScreenCoverExample.swift */; };
+		32B6B94C267282ED00F7B898 /* BasicButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B94B267282ED00F7B898 /* BasicButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		32B6B945267253B400F7B898 /* SheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExample.swift; sourceTree = "<group>"; };
 		32B6B948267256E100F7B898 /* FullScreenCoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverExample.swift; sourceTree = "<group>"; };
 		32B6B94A2672810200F7B898 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		32B6B94B267282ED00F7B898 /* BasicButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				32B6B93B267251DF00F7B898 /* MessageView.swift */,
+				32B6B94B267282ED00F7B898 /* BasicButtonStyle.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				32B6B93E267251DF00F7B898 /* PresentAsModalTest.swift in Sources */,
 				32B6B93C267251DF00F7B898 /* OverlayTest.swift in Sources */,
 				32B6B917267250CC00F7B898 /* ContentView.swift in Sources */,
+				32B6B94C267282ED00F7B898 /* BasicButtonStyle.swift in Sources */,
 				32B6B915267250CC00F7B898 /* Feedback_SwiftUI_LimitedModalCapabilitiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

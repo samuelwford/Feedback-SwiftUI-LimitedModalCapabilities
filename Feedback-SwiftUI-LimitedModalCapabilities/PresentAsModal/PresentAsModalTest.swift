@@ -29,6 +29,7 @@ struct PresentAsModalTest: View {
             Button("Say Hello with a UIKit Modal") {
                 isPresented.toggle()
             }
+            .buttonStyle(BasicButtonStyle(color: .blue))
         }
         .padding()
         // WORKAROUND: custom view extension that presents a view

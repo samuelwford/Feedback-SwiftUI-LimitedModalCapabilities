@@ -21,6 +21,7 @@ struct SheetExample: View {
             Button("Say Hello with an Sheet") {
                 isPresented = true
             }
+            .buttonStyle(BasicButtonStyle(color: .blue))
         }
         .padding()
         .sheet(isPresented: $isPresented) {

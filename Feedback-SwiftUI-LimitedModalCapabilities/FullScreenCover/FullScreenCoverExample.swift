@@ -21,6 +21,7 @@ struct FullScreenCoverExample: View {
             Button("Say Hello in a Full Screen Cover") {
                 isPresented = true
             }
+            .buttonStyle(BasicButtonStyle(color: .blue))
         }
         .padding()
         .fullScreenCover(isPresented: $isPresented) {

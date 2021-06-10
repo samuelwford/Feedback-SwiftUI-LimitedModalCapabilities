@@ -21,6 +21,7 @@ struct OverlayTest: View {
             Button("Say Hello with an Overlay Modal") {
                 isPresented = true
             }
+            .buttonStyle(BasicButtonStyle(color: .blue))
         }
         .padding()
         // HACK: without this, the "modal" view is skinny
