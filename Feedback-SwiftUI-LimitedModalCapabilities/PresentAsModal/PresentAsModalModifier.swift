@@ -1,8 +1,6 @@
 //
 //  PresentAsModalModifier.swift
-//  LaL
 //
-//  Created by Ford, Samuel on 5/21/21.
 //
 
 import SwiftUI
