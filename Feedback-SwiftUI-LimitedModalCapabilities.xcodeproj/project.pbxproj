@@ -11,6 +11,14 @@
 		32B6B917267250CC00F7B898 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B916267250CC00F7B898 /* ContentView.swift */; };
 		32B6B919267250CE00F7B898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B6B918267250CE00F7B898 /* Assets.xcassets */; };
 		32B6B91C267250CE00F7B898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B6B91B267250CE00F7B898 /* Preview Assets.xcassets */; };
+		32B6B93C267251DF00F7B898 /* OverlayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B934267251DF00F7B898 /* OverlayTest.swift */; };
+		32B6B93D267251DF00F7B898 /* PresentAsModalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B936267251DF00F7B898 /* PresentAsModalModifier.swift */; };
+		32B6B93E267251DF00F7B898 /* PresentAsModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B937267251DF00F7B898 /* PresentAsModalTest.swift */; };
+		32B6B93F267251DF00F7B898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B6B939267251DF00F7B898 /* Preview Assets.xcassets */; };
+		32B6B940267251DF00F7B898 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B93B267251DF00F7B898 /* MessageView.swift */; };
+		32B6B9432672521F00F7B898 /* ZStackModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B9422672521F00F7B898 /* ZStackModal.swift */; };
+		32B6B946267253B400F7B898 /* SheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B945267253B400F7B898 /* SheetExample.swift */; };
+		32B6B949267256E100F7B898 /* FullScreenCoverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6B948267256E100F7B898 /* FullScreenCoverExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,15 @@
 		32B6B918267250CE00F7B898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B6B91B267250CE00F7B898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32B6B91D267250CE00F7B898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B6B934267251DF00F7B898 /* OverlayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTest.swift; sourceTree = "<group>"; };
+		32B6B936267251DF00F7B898 /* PresentAsModalModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAsModalModifier.swift; sourceTree = "<group>"; };
+		32B6B937267251DF00F7B898 /* PresentAsModalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAsModalTest.swift; sourceTree = "<group>"; };
+		32B6B939267251DF00F7B898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32B6B93B267251DF00F7B898 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		32B6B9422672521F00F7B898 /* ZStackModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZStackModal.swift; sourceTree = "<group>"; };
+		32B6B945267253B400F7B898 /* SheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExample.swift; sourceTree = "<group>"; };
+		32B6B948267256E100F7B898 /* FullScreenCoverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverExample.swift; sourceTree = "<group>"; };
+		32B6B94A2672810200F7B898 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +53,7 @@
 		32B6B908267250CC00F7B898 = {
 			isa = PBXGroup;
 			children = (
+				32B6B94A2672810200F7B898 /* README.md */,
 				32B6B913267250CC00F7B898 /* Feedback-SwiftUI-LimitedModalCapabilities */,
 				32B6B912267250CC00F7B898 /* Products */,
 			);
@@ -54,6 +72,13 @@
 			children = (
 				32B6B914267250CC00F7B898 /* Feedback_SwiftUI_LimitedModalCapabilitiesApp.swift */,
 				32B6B916267250CC00F7B898 /* ContentView.swift */,
+				32B6B947267256C800F7B898 /* FullScreenCover */,
+				32B6B933267251DF00F7B898 /* Overlay */,
+				32B6B935267251DF00F7B898 /* PresentAsModal */,
+				32B6B9442672537300F7B898 /* Sheet */,
+				32B6B9412672521F00F7B898 /* ZStack */,
+				32B6B93A267251DF00F7B898 /* Shared */,
+				32B6B938267251DF00F7B898 /* Preview Content */,
 				32B6B918267250CE00F7B898 /* Assets.xcassets */,
 				32B6B91D267250CE00F7B898 /* Info.plist */,
 				32B6B91A267250CE00F7B898 /* Preview Content */,
@@ -67,6 +92,64 @@
 				32B6B91B267250CE00F7B898 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32B6B933267251DF00F7B898 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B934267251DF00F7B898 /* OverlayTest.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		32B6B935267251DF00F7B898 /* PresentAsModal */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B936267251DF00F7B898 /* PresentAsModalModifier.swift */,
+				32B6B937267251DF00F7B898 /* PresentAsModalTest.swift */,
+			);
+			path = PresentAsModal;
+			sourceTree = "<group>";
+		};
+		32B6B938267251DF00F7B898 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B939267251DF00F7B898 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "../../../Experiments/SwiftUIPresentAsModal/SwiftUIPresentAsModal/Preview Content";
+			sourceTree = "<group>";
+		};
+		32B6B93A267251DF00F7B898 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B93B267251DF00F7B898 /* MessageView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		32B6B9412672521F00F7B898 /* ZStack */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B9422672521F00F7B898 /* ZStackModal.swift */,
+			);
+			path = ZStack;
+			sourceTree = "<group>";
+		};
+		32B6B9442672537300F7B898 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B945267253B400F7B898 /* SheetExample.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		32B6B947267256C800F7B898 /* FullScreenCover */ = {
+			isa = PBXGroup;
+			children = (
+				32B6B948267256E100F7B898 /* FullScreenCoverExample.swift */,
+			);
+			path = FullScreenCover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B6B91C267250CE00F7B898 /* Preview Assets.xcassets in Resources */,
+				32B6B93F267251DF00F7B898 /* Preview Assets.xcassets in Resources */,
 				32B6B919267250CE00F7B898 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B6B9432672521F00F7B898 /* ZStackModal.swift in Sources */,
+				32B6B940267251DF00F7B898 /* MessageView.swift in Sources */,
+				32B6B946267253B400F7B898 /* SheetExample.swift in Sources */,
+				32B6B93D267251DF00F7B898 /* PresentAsModalModifier.swift in Sources */,
+				32B6B949267256E100F7B898 /* FullScreenCoverExample.swift in Sources */,
+				32B6B93E267251DF00F7B898 /* PresentAsModalTest.swift in Sources */,
+				32B6B93C267251DF00F7B898 /* OverlayTest.swift in Sources */,
 				32B6B917267250CC00F7B898 /* ContentView.swift in Sources */,
 				32B6B915267250CC00F7B898 /* Feedback_SwiftUI_LimitedModalCapabilitiesApp.swift in Sources */,
 			);
