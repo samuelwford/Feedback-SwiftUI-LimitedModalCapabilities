@@ -10,6 +10,8 @@ import SwiftUI
 struct MessageView: View {
     let message: String
     
+    @Environment(\.dismissModal) var dismiss
+    
     var body: some View {
         Color.gray
             .opacity(0.8)
@@ -20,6 +22,7 @@ struct MessageView: View {
                     .bold()
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 8.0).foregroundColor(.orange))
+                    .onTapGesture(perform: dismiss)
             )
     }
 }

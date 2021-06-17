@@ -30,9 +30,7 @@ struct OverlayTest: View {
             Group {
                 if isPresented {
                     MessageView(message: "Hello, Overlay Modally")
-                        .onTapGesture {
-                            isPresented = false
-                        }
+                        .environment(\.dismissModal, { isPresented = false })
                 } else {
                     EmptyView()
                 }

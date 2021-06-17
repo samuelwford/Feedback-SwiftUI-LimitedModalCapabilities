@@ -72,9 +72,8 @@ private struct PresentAsModalView<Content: View>: View {
     var body: some View {
         if isPresented {
             Color.clear
-                .onAppear {
-                    present()
-                }
+                .onAppear(perform: present)
+                .onDisappear(perform: dismiss)
         } else {
             EmptyView()
         }
@@ -85,9 +84,10 @@ private struct PresentAsModalView<Content: View>: View {
     }
     
     func present() {
-        let vc = UIHostingController(rootView: content().onTapGesture {
-            dismiss()
-        })
+        let view = content()
+            .environment(\.dismissModal, { isPresented = false })
+        
+        let vc = UIHostingController(rootView: view)
         
         if isTransparent {
             vc.view.backgroundColor = .clear
@@ -103,5 +103,16 @@ private struct PresentAsModalView<Content: View>: View {
     func dismiss() {
         rootViewController?.dismiss(animated: true)
         isPresented = false
+    }
+}
+
+struct DismissModalEnvironmentKey: EnvironmentKey {
+    static var defaultValue = {}
+}
+
+extension EnvironmentValues {
+    var dismissModal: () -> Void {
+        get { self[DismissModalEnvironmentKey.self] }
+        set { self[DismissModalEnvironmentKey.self] = newValue }
     }
 }

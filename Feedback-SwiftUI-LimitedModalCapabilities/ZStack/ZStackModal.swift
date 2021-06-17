@@ -22,9 +22,7 @@ struct ZStackModalModifier<ModalContent: View>: ViewModifier {
             content
             if isPresented {
                 modalContent()
-                    .onTapGesture {
-                        isPresented = false
-                    }
+                    .environment(\.dismissModal, { isPresented = false })
             }
         }
         .animation(.default, value: isPresented)

@@ -26,9 +26,7 @@ struct SheetExample: View {
         .padding()
         .sheet(isPresented: $isPresented) {
             MessageView(message: "Hello, in a Sheet")
-                .onTapGesture {
-                    isPresented = false
-                }
+                .environment(\.dismissModal, { isPresented = false })
         }
     }
 }

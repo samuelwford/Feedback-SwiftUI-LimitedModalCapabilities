@@ -26,9 +26,7 @@ struct FullScreenCoverExample: View {
         .padding()
         .fullScreenCover(isPresented: $isPresented) {
             MessageView(message: "Hello, in a Full Screen Cover")
-                .onTapGesture {
-                    isPresented = false
-                }
+                .environment(\.dismissModal, { isPresented = false })
         }
     }
 }
