@@ -91,10 +91,6 @@ private struct PresentAsModalView<Content: View>: View {
         return viewController
     }
     
-    var rootViewController: UIViewController? {
-        UIApplication.shared.windows.first?.rootViewController
-    }
-    
     func present() {
         let view = content()
             .environment(\.dismissModal, { isPresented = false })
