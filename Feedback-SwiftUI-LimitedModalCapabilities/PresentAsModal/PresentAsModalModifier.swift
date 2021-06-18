@@ -61,6 +61,8 @@ private struct PresentAsModalView<Content: View>: View {
     let isTransparent: Bool
     let content: () -> Content
     
+    @State private var presentingViewController: UIViewController? = nil
+    
     init(isPresented: Binding<Bool>, modalPresentationStyle: UIModalPresentationStyle, modalTransitionStyle: UIModalTransitionStyle, isTransparent: Bool, @ViewBuilder content: @escaping () -> Content) {
         self._isPresented = isPresented
         self.modalPresentationStyle = modalPresentationStyle
@@ -77,6 +79,16 @@ private struct PresentAsModalView<Content: View>: View {
         } else {
             EmptyView()
         }
+    }
+    
+    func findViewControllerForPresenting() -> UIViewController? {
+        var viewController = UIApplication.shared.windows.first?.rootViewController
+        
+        while let presentedViewController = viewController?.presentedViewController {
+            viewController = presentedViewController
+        }
+        
+        return viewController
     }
     
     var rootViewController: UIViewController? {
@@ -97,11 +109,13 @@ private struct PresentAsModalView<Content: View>: View {
         vc.modalPresentationStyle = modalPresentationStyle
         vc.modalTransitionStyle = modalTransitionStyle
         
-        rootViewController?.present(vc, animated: true)
+        presentingViewController = findViewControllerForPresenting()
+        presentingViewController?.present(vc, animated: true)
     }
     
     func dismiss() {
-        rootViewController?.dismiss(animated: true)
+        presentingViewController?.dismiss(animated: true)
+        presentingViewController = nil
         isPresented = false
     }
 }
